@@ -1,0 +1,158 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color:rgb(167, 160, 216);
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+}
+
+header h1 {
+    margin-bottom: 0.5em;
+}
+
+header h2 {
+    margin-top: 0.5em;
+    font-weight: normal;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.intro h3, .links h3, .projects h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.intro p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.images img {
+    max-width: 100%;
+    height: auto;
+}
+
+.links, .projects {
+    text-align: center;
+}
+
+.links img, .projects img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.projects ol {
+    list-style: none;
+    padding: 0;
+}
+
+.projects li {
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .images, .links img, .projects img {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 1em 0;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header h2 {
+        font-size: 1.2em;
+    }
+
+    .intro p {
+        font-size: 0.9em;
+    }
+
+    .projects h2, .intro h3, .links h3 {
+        font-size: 1.1em;
+    }
+}
+
+nav {
+    position: relative;
+}
+
+#menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1em;
+}
+
+#menu li {
+    margin: 0.5em 0;
+}
+
+#menuToggle {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    #menu {
+        display: none;
+        position: absolute;
+        top: 2em;
+        right: 0;
+        background: #fff;
+        border: 1px solid #ccc;
+        padding: 1em;
+        flex-direction: column;
+    }
+
+    #menuToggle {
+        display: block;
+    }
+}
+
+

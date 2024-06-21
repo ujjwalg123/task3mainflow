@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ujjwal's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Ujjwal's Portfolio</h1>
+        <h2>I am a Web Developer</h2>
+        <nav>
+            <ul id="menu">
+                <li><a href="#intro">About Me</a></li>
+                <li><a href="#projects">Other pages</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="menuToggle">Menu</button>
+        </nav>
+    </header>
+    <main>
+        <section id="intro" class="intro">
+            <h3>About Me</h3>
+            <p>
+                Name: Ujjwal Kumar<br>
+                College: NIT Patna<br>
+                Contact: 7635007156<br>
+                Branch: CSE<br>
+                Year: 2nd Year
+            </p>
+            <div class="images">
+                <img src="./Uj1.jpg" height="277" alt="college image">
+                <img src="./Uj3.jpg" height="277" alt="my pic">
+                <img src="https://www.nitp.ac.in/static/c379f514b1ed9d9f969ca29d1cea7a3b/9a128/2019-03-18_1920x1080_1_700x500.jpg" height="300" alt="pic from nitp webpage">
+            </div>
+        </section>
+        <section id="links" class="links">
+            <h3>More Information</h3>
+            <a href="./myinfo.html"><img src="./Uj2.jpg" height="277" alt="my pic at ganga"></a>
+            <a href="./myinfo.html">Click here for more info</a>
+            <h3>College Details</h3>
+            <a href="./coll.html"><img src="./Uj4.jpg" height="277" alt="nit ghat pic"></a>
+            <a href="./coll.html">Click here for college details</a>
+        </section>
+        <section id="projects" class="projects">
+            <h2>Two Webpages I Have Designed</h2>
+            <ol>
+                <li>
+                    Recipe Page<br>
+                    <a href="./recipe.html"><img src="https://www.1mg.com/articles/wp-content/uploads/2020/06/desi-vegetable-oat-pancake.jpg" height="216" alt="Recipe Page"></a>
+                    <a href="./recipe.html">Click here</a>
+                </li>
+                <li>
+                    Animal Page<br>
+                    <a href="./animal.html"><img src="https://www.timeforkids.com/wp-content/uploads/2020/08/animalVoting.jpg?w=1024" height="190" alt="Animal Page"></a>
+                    <a href="./animal.html">Click here</a>
+                </li>
+            </ol>
+        </section>
+    
+        <section id="contact" class="contact">
+            <h3>Contact Me</h3>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+            <p id="formStatus"></p>
+        </section>
+    
+        <section class="dynamic-content">
+            <h3>Dynamic Content</h3>
+            <p id="dynamicText">This is some dynamic content.</p>
+            <button id="changeTextButton">Change Text</button> </br>
+            <button id="changeBackColor">Change BackgroundColor Of Page</button>
+        </section>
+        
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Ujjwal Kumar</p>
+    </footer>
+</body>
+</html>
